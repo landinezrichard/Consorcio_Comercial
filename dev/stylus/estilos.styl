@@ -2,20 +2,60 @@
 @import "normalize.styl"
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300')
 
+/*ICONOS COMO FUENTES*/
+@import "iconfonts.styl"
 
 /*
 * Fuente Century Ghotic
 */
 
-@font-face   
-	font-family "Century"
+@font-face
+	font-family "Century-bold"
 	src url(../fonts/century-gothic-bold.ttf)
+	
+@font-face
+	font-family "Century"
+	src url(../fonts/century-gothic.ttf)
 	  
 // .parrafo-personalizado{  font-family:”Digital”; }
+
+$white = #FFF
+$black = #000
+$dark_black = #1D1D1B
+$gray = #515050
+
+$transparent_black = rgba(0,0,0,.70)
+$transparent_white = rgba(255,255,255,.80)
 
 html
 	font-size 16px
 	font-family 'Lato', sans-serif /* Fuente de google fonts */
 
 body
-	background red
+	background-color $white
+	
+img
+	max-width 100%
+	max-height 100%
+
+a
+	text-decoration none
+	
+.u-centrar
+	margin 0 auto
+	max-width 1200px
+	text-align center
+	overflow auto
+	
+/*HEADER*/
+@import "../components/Header/estilos.styl"
+
+/*MAINMENU*/
+@import "../components/MainMenu/estilos.styl"
+
+/*BANNER*/
+@import "../components/Banner/estilos.styl"
+
+/*OWL CAROUSEL*/
+@import "owl.carousel.styl"
+@import "owl-default-theme.styl"

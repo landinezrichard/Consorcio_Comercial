@@ -1,30 +1,35 @@
 header.Header
-	div.Header-logos
-		span.Header-logoOikos
-			|	Logo oikos
-		span.Header-logoConsorcio
-			|	Logo Consorcio
-		span.Header-logoAmbienti
-			|	Logo Ambienti
-	div.Header-contacto
-		div.Header-contactoMail
-			span.Header-contactoMailtext
-				|	serv-cliente@consorcioc.com
-		div.Header-contactoTel
-			span.Header-contactoTelText
-				|	3132345678
-		div.Header-contactoRedes
-			span.Header-contactoRedesText
-				|	SÍGANOS EN
-			a
-				|	fb
-			a
-				|	tw
-			a
-				|	gp
-			a
-				|	yt
-			a
-				|	bg
-			a
-				|	rs
+	div.u-centrar
+		div.Header-logos
+			span.Header-logoOikos
+				img(src="../images/logos/logo-oikos.png").Header-logoOikosImg
+				//- include ../Logos/logo-oikos.jade
+			span.Header-logoConsorcio
+				img(src="../images/logos/logo-consorcio.png").Header-logoConsorcioImg
+				//- include ../Logos/logo-consorcio.jade
+			span.Header-logoAmbienti
+				img(src="../images/logos/logo-ambienti.png").Header-logoAmbientiImg
+		div.Header-contacto
+			div.Header-contactoMail
+				span.icon-envelope.Header-contactoMailIcon
+				span.Header-contactoMailtext
+					|	serv-cliente@consorcioc.com
+			div.Header-contactoTel
+				span.icon-mobile.Header-contactoTelIcon
+				span.Header-contactoTelText
+					|	3132345678
+			div.Header-contactoRedes
+				span.Header-contactoRedesText
+					|	SÍGANOS EN
+				a.Header-contactoRedesIcon
+					span.icon-facebook
+				a.Header-contactoRedesIcon
+					span.icon-twitter
+				a.Header-contactoRedesIcon
+					span.icon-google-plus
+				a.Header-contactoRedesIcon
+					span.icon-youtube
+				a.Header-contactoRedesIcon
+					span.icon-blogger
+				a.Header-contactoRedesIcon
+					span.icon-rss
