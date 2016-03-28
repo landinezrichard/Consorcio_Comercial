@@ -12,13 +12,14 @@ $(document).ready(function() {
 		nav: true,
 		autoPlay: false,
 		slideSpeed: 1000,
-		pagination: true,
+		dots: true,
 		loop:true,
 		responsive: {
 			0:{
 				items:1
 			}
-		}
+		},
+		navText: [arrow_izq,arrow_der]
 	});
 
 	/*Slider Otros Proyectos*/
@@ -26,7 +27,7 @@ $(document).ready(function() {
 		nav: false,
 		autoPlay: false,
 		slideSpeed: 1000,
-		pagination: true,
+		dots: true,
 		loop:true,
 		responsive: {
 			0:{
@@ -35,13 +36,25 @@ $(document).ready(function() {
 		}
 	});
 
-	/*Modificar los controles del Owl*/
-	$.each($('.owl-prev'),function(elemento){
-			$(this).html(arrow_izq);
-	});
-
-	$.each($('.owl-next'),function(elemento){
-			$(this).html(arrow_der);
-	});
+	/*Carrusel Noticias*/
+	$('.News-list.owl-carousel').owlCarousel({		
+		nav: true,
+		autoPlay: false,
+		slideSpeed: 1000,
+		dots: false,
+		loop:true,
+		responsive: {
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			840:{
+				items:3
+			}
+		},
+		navText: [arrow_izq,arrow_der]
+	});	
 
 });

@@ -1,0 +1,107 @@
+/*CONTACTO*/
+
+.Contacto
+	&-fondo
+		background $light_gray2
+		
+	/*Mapa index*/
+	&-map
+		display inline-block
+		width 38%
+		box-sizing border-box
+	&-mapTitle
+		font-weight 700
+		font-size 1.56em
+		color $dark_black
+		text-align left
+		margin .7em 0
+		
+	/*Formulario index*/
+	&-form
+		display inline-block
+		width 60%
+		box-sizing border-box
+		vertical-align top
+		margin 1.4em 0
+		text-align left
+	&-field
+	&-buttonContainer
+	&-checkContainer
+	&-textAreaContainer
+		margin 0
+		padding 0
+		border none
+	&-field
+		width 44%
+		display inline-block
+		margin 0 2.5%
+		// margin 20px 2.5% 0 2.5%
+	&-label
+		text-transform uppercase
+		margin .6em 0
+		font-weight 400
+		font-size 1.06em
+		color $dark_black
+		display inline-block
+	&-input
+		width 100%
+		height 44px
+		border 1px solid $light_gray
+		padding .2em
+		
+	&-textAreaContainer
+		width 95%
+		margin 0 2.5% 0 2.5%
+		
+	&-textArea
+		width 100%
+		min-height 140px
+		resize none
+		padding .2em
+	&-button
+		float right
+		background $blue
+		font-weight 700
+		font-size 1.24em
+		color $white
+		width 156px
+		height 64px
+		line-height 64px
+		text-transform uppercase
+		border none
+		margin .5em 2.5% 0
+		
+	&-checkContainer
+		width 95%
+		margin .5em 2.5% 0 2.5%
+		text-align justify
+	&-checkLabel
+		font-weight 400
+		font-size 0.86em
+		color $dark_black
+		position relative
+		left 22px
+		cursor pointer
+		display inline-block
+		width 97%
+		
+	&-check
+		position absolute
+		left -9999px
+		
+	&-check + label:before
+		content ''
+		position absolute
+		width 19px
+		height 19px
+		top 0
+		left -22px
+		transition all .2s
+	
+	/* OFF */
+	&-check:not(:checked) + label:before
+		background url('../images/contacto/check-off.png') left center no-repeat
+
+	/* ON */
+	&-check:checked + label:before
+		background: url('../images/contacto/check-on.png') left center no-repeat
