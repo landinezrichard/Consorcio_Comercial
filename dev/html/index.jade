@@ -12,6 +12,13 @@ html(lang="es")
 		include ../components/MainMenu/template.jade
 		include ../components/Banner/template.jade
 		include ../components/Index/industrial.jade
+		include ../components/Index/familiar.jade
+		include ../components/Index/destacado.jade
+		section.Index
+			div.u-centrar
+				h1.Index-title
+					|	Noticias
+				include ../components/News/slider.jade
 		script("text/javascript", src="https://code.jquery.com/jquery-2.2.1.min.js")
 		script("text/javascript", src="../js/owl.carousel.min.js")
 		script("text/javascript", src="../js/functions.js")
