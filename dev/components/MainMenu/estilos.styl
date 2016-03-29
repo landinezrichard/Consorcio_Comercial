@@ -1,19 +1,29 @@
 /*MAINMENU*/
 .MainMenu
 	background-color $transparent_black
-	
+	position absolute	
+	top 58px
+	left 0
+	right 0
+	z-index 10
+	display none
 	&-list
 		list-style none
 		padding 0
 		margin 1em 0
+		overflow-x hidden
 	&-item
 		display inline-block
-		margin 0 1em
+		margin 0
+		width 100%
 	&-link
 		color $white
 		font-weight 400
 		font-size 1.12em
 		font-family "Century"
+		display inline-block
+		width 90%
+		padding 1em
 		
 /*tablet*/
 @media screen and (min-width:800px)
@@ -24,3 +34,17 @@
 		left 0
 		right 0
 		z-index 10
+		display inline-block !important
+		
+		&-list			
+			margin 0
+			height 54px
+			line-height 54px
+			
+		&-item
+			width auto
+			margin 0 1em
+		&-link
+			height 100%
+			width auto
+			padding 0

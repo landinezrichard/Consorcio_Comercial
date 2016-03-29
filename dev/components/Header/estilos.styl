@@ -6,27 +6,55 @@
 	&-logos
 		display inline-block
 		float left
+		width 100%
 	&-logoOikos
-		display inline-block
-		margin 0 .5em
+	&-logoAmbienti
+		display none
+		
 	&-logoConsorcio
 		display inline-block
-		margin 0 1.5em
-	&-logoAmbienti
+		margin 0 0 0 1em
+		float left
+	&-logoConsorcioImg
+		width 120px
+		
+	/*Menu Mobile*/
+		
+	&-mobile
 		display inline-block
-		margin 0 .5em
+		vertical-align middle
+		color $dark_black
+		float right
+		font-size 2.2em
+		line-height 1.7em
+		
+	&-mobileTel
+	&-mobileMail
+	&-mobileMenu
+	&-mobileRedes
+		cursor pointer
+		margin 0 .5rem
 	
 	/*Info de contacto*/
 
 	&-contacto
-		display inline-block
 		color $gray
-		float right
 		margin 1em 0
+		position absolute
+		top 42px
+		z-index 10
+		left 0
+		right 0
+		background $white
 		
 	&-contactoMail
 	&-contactoTel
-		display inline-block
+	&-contactoRedes
+		display none
+		
+	&-contactoMail
+	&-contactoTel
+		margin .5em 1em
 		
 	&-contactoMailtext
 		font-weight 700
@@ -42,7 +70,7 @@
 		
 	&-contactoTel
 		font-weight 700
-		margin 0 1em
+		// margin 0 1em
 		
 	&-contactoTelIcon
 		font-size 1.5em
@@ -54,8 +82,7 @@
 	&-contactoTelText
 		vertical-align middle
 		
-	&-contactoRedes
-		text-align right
+	&-contactoRedes		
 		margin .5em 0
 		
 	&-contactoRedesText
@@ -67,8 +94,54 @@
 		margin 0 .5em
 		font-size 1.43em
 		vertical-align middle
-
+		
+/*Phone Landscape*/
+@media screen and (min-width:600px)
+	.Header
+		&-logoOikos
+		&-logoAmbienti
+			display inline-block
+		&-logoOikosImg
+			width 74px
+		&-logoAmbientiImg
+			width 80px
 /*tablet*/
 @media screen and (min-width:800px)
 	.Header
 		margin-top 50px
+		
+		/*Logos*/
+		&-logos
+			width auto	
+
+		&-logoOikos
+		&-logoAmbienti
+			display inline-block
+			margin 0 .5em
+			
+		&-logoConsorcio
+			float none
+			margin 0 1.5em
+			
+		&-logoConsorcioImg
+			width auto
+			
+		/*Menu Mobile*/			
+		&-mobile
+			display none
+		/*Info de Contacto*/
+		&-contacto
+			display inline-block
+			float right
+			position static
+			background transparent
+		
+		&-contactoMail
+		&-contactoTel
+			display inline-block !important
+			margin 0 1em
+			
+		&-contactoRedes
+			display block !important
+		&-contactoRedes
+			text-align right		
