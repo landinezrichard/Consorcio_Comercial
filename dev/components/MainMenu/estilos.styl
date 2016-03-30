@@ -25,8 +25,8 @@
 		width 90%
 		padding 1em
 		
-/*tablet*/
-@media screen and (min-width:800px)
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
 	.MainMenu
 		position absolute
 		// top 0
@@ -36,9 +36,9 @@
 		z-index 10
 		display inline-block !important
 		
-		&-list			
+		&-list
 			margin 0
-			height 54px
+			// height 54px
 			line-height 54px
 			
 		&-item
@@ -48,3 +48,9 @@
 			height 100%
 			width auto
 			padding 0
+			font-size 0.87em
+/*Desktop*/
+@media screen and (min-width:1280px)
+	.MainMenu
+		&-link
+			font-size 1.12em

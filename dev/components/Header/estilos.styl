@@ -39,7 +39,7 @@
 
 	&-contacto
 		color $gray
-		margin 1em 0
+		margin 1em .5em
 		position absolute
 		top 42px
 		z-index 10
@@ -120,8 +120,8 @@
 			width 150px
 		&-contactoRedesIcon
 			margin 0 .5em
-/*tablet*/
-@media screen and (min-width:800px)
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
 	.Header
 		margin-top 50px
 		
@@ -156,9 +156,16 @@
 		&-contactoMail
 		&-contactoTel
 			display inline-block !important
-			margin 0 1em
+			margin 0
 			
 		&-contactoRedes
 			display block !important
 		&-contactoRedes
-			text-align right		
+			text-align right
+/*Desktop*/
+@media screen and (min-width:1280px)
+	.Header
+		/*Info de Contacto*/
+		&-contactoMail
+		&-contactoTel			
+			margin 0 1em
