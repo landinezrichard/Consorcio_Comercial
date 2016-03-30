@@ -7,29 +7,24 @@
 		color $white
 		background-color $dark_black
 		display inline-block
-		width 391px
+		width 340px
 		height 49px
 		line-height 49px
-		margin 40px 0
+		margin 20px 0
 		text-transform uppercase
 		// padding .5em 1.5em
 	&-Container
 		margin-bottom 40px
 	
-	&-itemFondo
-		background-image url('../images/index/fondo-clip.png')
-		width 795px
-		min-height 505px
-		display inline-block
-		background-size contain
-		background-repeat no-repeat
-		background-position top
+	&-itemFondo		
+		display inline-block				
 	
 	/*Informacion proyectos*/
 	&-itemContainer
 		display inline-block
-		margin 53px 42px 53px 32px
+		margin 20px
 		position relative
+		min-height 435px
 		
 	&-itemTitle
 		position absolute
@@ -51,7 +46,7 @@
 		right 0
 		background-color $white
 		max-width 674px
-		margin 0 25px
+		margin 0
 		padding 15px
 		box-shadow $light_gray 0 5px 35px
 	&-itemText	
@@ -80,17 +75,17 @@
 	
 	/*Info slides*/
 	&-itemSlideCarousel
-		width 385px
-		min-height 482px		
+		width 340px
+		min-height 482px
 		display inline-block !important
-		margin 40px .5em 0		
+		margin 40px 0
 	&-itemSlide
-		width 385px
+		width 340px
 		min-height 482px
 		display inline-block		
 	&-itemSlideContainer
 		display inline-block		
-		position relative
+		position relative		
 	&-itemSlideTitle
 		position absolute
 		top 0
@@ -163,14 +158,42 @@
 		padding .7em
 		margin-bottom 40px
 		box-shadow $transparent_black 0 7px 15px
+		box-sizing border-box
 		
 		& iframe
 			width 90%
 			height 300px
+			
+/*Phone Landscape*/
+@media screen and (min-width:600px)
+	.Index
+		&-title
+			width 391px
+			margin 40px 0
+		&-itemDesc
+			margin 0 25px
+			padding 15px
+		/*Informacion proyectos*/
+		&-itemContainer			
+			min-height none
+			margin 53px 42px 53px 32px
+		/*Info slides*/
+		&-itemSlideCarousel
+			width 385px
+			margin 40px .5em 0		
+		&-itemSlide
+			width 385px			
 
 /*Desktop*/
 @media (min-width: 840px)
 	.Index
+		&-itemFondo
+			background-image url('../images/index/fondo-clip.png')
+			width 795px
+			min-height 505px			
+			background-size contain
+			background-repeat no-repeat
+			background-position top
 		&-destacadoContainer			
 			& iframe
 				width 630px

@@ -82,7 +82,7 @@
 	&-contactoTelText
 		vertical-align middle
 		
-	&-contactoRedes		
+	&-contactoRedes
 		margin .5em 0
 		
 	&-contactoRedesText
@@ -91,7 +91,7 @@
 		
 	&-contactoRedesIcon
 		display inline-block
-		margin 0 .5em
+		margin 0 .3em
 		font-size 1.43em
 		vertical-align middle
 		
@@ -99,12 +99,27 @@
 @media screen and (min-width:600px)
 	.Header
 		&-logoOikos
+		&-logoConsorcio
+		&-logoAmbienti
+			vertical-align middle
+		&-logoConsorcio		
+			margin 0 .4em
+			float left
+		&-logoOikos
+			margin 0 .4em 0 .7em
+			float left
+		&-logoAmbienti
+			margin 0
+			float left
+		&-logoOikos
 		&-logoAmbienti
 			display inline-block
 		&-logoOikosImg
 			width 74px
 		&-logoAmbientiImg
-			width 80px
+			width 150px
+		&-contactoRedesIcon
+			margin 0 .5em
 /*tablet*/
 @media screen and (min-width:800px)
 	.Header
@@ -120,10 +135,12 @@
 			margin 0 .5em
 			
 		&-logoConsorcio
-			float none
+			// float none
 			margin 0 1.5em
 			
 		&-logoConsorcioImg
+		&-logoOikosImg
+		&-logoAmbientiImg
 			width auto
 			
 		/*Menu Mobile*/			

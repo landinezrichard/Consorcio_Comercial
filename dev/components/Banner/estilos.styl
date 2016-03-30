@@ -21,23 +21,18 @@
 		// height 714px
 	/*Cuadro de informacion sobre el banner*/
 	&-info
-		position absolute
-		right 360px
-		bottom 0
+		background $light_gray2	
 		text-align center
 	&-infoImageContainer
 		width 174px
 		display inline-block
-		margin 0
-		margin-bottom 1em
+		margin 1em 0		
 		padding 0
 	&-infoImage
 		display inline-block
 		
-	&-text
-		text-align left
-		background-color $transparent_white
-		padding 2em
+	&-text		
+		padding 1em
 		max-width 605px
 		box-sizing border-box
 		
@@ -46,14 +41,13 @@
 		font-weight 700
 		font-size 2.34em
 		margin 0
-		margin-left 1em
-		// margin 1em 0 .5em
+		
 	&-textDesc
 		color $dark_black
 		font-weight 400
 		font-size 1.67em
-		margin-top 0
-		margin-left 1em
+		margin 0
+		margin-bottom 1em		
 		
 	&-fondo
 		background-image url('../images/index/fondo-transparente.png')
@@ -78,8 +72,9 @@
 
 .Banner-slides.owl-carousel .owl-controls .owl-dots
 	position absolute
-	bottom 35px
-	left 20%
+	bottom 0
+	left 0
+	right 0
 	
 .Banner-slides.owl-carousel .owl-controls .owl-dots .owl-dot span
 	width 20px
@@ -101,3 +96,33 @@
 	
 .Banner-slides.owl-carousel .owl-controls .owl-nav .owl-next	
 	right 0
+			
+/*Phone Landscape*/
+@media screen and (min-width:600px)
+	.Banner
+		/*Cuadro de informacion sobre el banner*/
+		&-info
+			background transparent
+			position absolute
+			right 360px
+			bottom 0
+		&-infoImageContainer			
+			margin 0
+			margin-bottom 1em
+		&-text
+			text-align left
+			background-color $transparent_white
+			padding 2em
+		&-textTitle			
+			margin 0
+			margin-left 1em
+			
+		&-textDesc			
+			margin-top 0
+			margin-left 1em
+	/*Puntos owl*/
+	.Banner-slides.owl-carousel .owl-controls .owl-dots
+		position absolute
+		bottom 35px
+		left 20%
+		right inherit
