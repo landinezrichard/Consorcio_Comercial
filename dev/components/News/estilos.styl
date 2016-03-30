@@ -50,10 +50,10 @@
 .News-list.owl-carousel .owl-controls .owl-nav
 	margin-top 0
 
-.News-list.owl-carousel .owl-controls .owl-nav .owl-prev	
+.News-list.owl-carousel .owl-controls .owl-nav .owl-prev
 .News-list.owl-carousel .owl-controls .owl-nav .owl-next
-	position absolute	
-	top 45%
+	position absolute
+	top 40%
 	font-size 1.7em
 	background-color $dark_gray
 
@@ -62,3 +62,28 @@
 	
 .News-list.owl-carousel .owl-controls .owl-nav .owl-next	
 	right 0
+	
+/*Phone Landscape*/
+@media screen and (min-width:600px)
+	/*Controles OWl*/
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-prev
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-next		
+		top 28%
+	
+/*Desktop*/
+@media screen and (min-width:840px)
+	/*Controles OWl*/
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-prev
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-next		
+		top 35%
+/*Desktop*/
+@media screen and (min-width:1280px)
+	/*Controles OWl*/
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-prev
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-next		
+		top 45%
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-prev	
+		left -54px
+		
+	.News-list.owl-carousel .owl-controls .owl-nav .owl-next	
+		right -54px

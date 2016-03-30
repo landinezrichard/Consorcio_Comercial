@@ -1,0 +1,85 @@
+/*PROYECTOS*/
+.Proyect
+	&-banner
+		display none
+	&-List
+		width 100%
+		display inline-block
+		margin 20px 0
+	&-item
+		display inline-block
+		max-width 567px
+		min-height 462px
+		position relative
+		margin .5em
+	&-itemCuadro
+		position absolute
+		bottom 12px
+		left 0
+		right 0		
+		max-width 545px
+		margin 0
+		padding 15px
+		
+	&-itemLogo
+		display inline-block
+		width 177px
+		height 174px
+		
+	&-itemDesc
+		display inline-block
+		width 346px
+		max-width 367px
+		height 174px
+		text-align left
+		padding 1.5em
+		box-sizing border-box
+		
+	&-itemLogo
+	&-itemDesc
+		vertical-align top		
+		background-color $white
+		box-shadow $light_gray 0 5px 35px
+		
+	&-itemUbica
+		font-weight 700
+		font-size 1.12em
+		color $dark_gray
+		margin 0
+	&-itemDir
+		font-weight 400
+		font-size 1.06em
+		color $dark_gray
+		margin .0
+	&-itemPrecio
+		font-weight 700
+		font-size 1.87em
+		color $lima
+		margin 0
+	&-itemButton
+		display inline-block
+		cursor pointer
+		text-transform uppercase
+		background-color $blue
+		color $white
+		font-weight 400
+		font-size 0.9em
+		width 123px
+		height 36px
+		line-height 36px
+		margin 1em 0
+		text-align center
+		float right
+
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Proyect
+		&-banner
+			display block
+			width 100%
+		/*titulo*/
+		&-mobile
+			display none
+			
+		&-List			
+			margin 40px 0

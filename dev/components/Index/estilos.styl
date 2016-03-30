@@ -14,12 +14,15 @@
 		text-transform uppercase
 		// padding .5em 1.5em
 	&-Container
-		margin-bottom 40px
+		margin-bottom 20px
 	
 	&-itemFondo		
 		display inline-block				
 	
 	/*Informacion proyectos*/
+	&-clip
+		display none		
+
 	&-itemContainer
 		display inline-block
 		margin 20px
@@ -78,10 +81,10 @@
 		width 340px
 		min-height 482px
 		display inline-block !important
-		margin 40px 0
+		margin 30px 0 10px
 	&-itemSlide
 		width 340px
-		min-height 482px
+		min-height 445px		
 		display inline-block		
 	&-itemSlideContainer
 		display inline-block		
@@ -167,6 +170,8 @@
 /*Phone Landscape*/
 @media screen and (min-width:600px)
 	.Index
+		&-Container
+			margin-bottom 40px
 		&-title
 			width 391px
 			margin 40px 0
@@ -180,13 +185,14 @@
 		/*Info slides*/
 		&-itemSlideCarousel
 			width 385px
-			margin 40px .5em 0		
+			margin 40px .5em 0	
 		&-itemSlide
-			width 385px			
+			width 385px
+			min-height 482px		
 
 /*Desktop*/
 @media (min-width: 840px)
-	.Index
+	.Index		
 		&-itemFondo
 			background-image url('../images/index/fondo-clip.png')
 			width 795px
@@ -194,12 +200,23 @@
 			background-size contain
 			background-repeat no-repeat
 			background-position top
+		&-clip
+			display inline-block
+			width 50px
+			height 115px
+			position absolute
+			top -52px
+			right 45px
+			z-index 2
 		&-destacadoContainer			
 			& iframe
 				width 630px
 				height 355px
 				
 /*Controles OWl*/
+
+.Index-itemSlideCarousel.owl-carousel .owl-controls .owl-nav
+	margin-top 0
 	
 .Index-itemSlideCarousel.owl-carousel .owl-controls .owl-dots .owl-dot span
 	width 20px
