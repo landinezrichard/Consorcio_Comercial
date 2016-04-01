@@ -66,3 +66,54 @@ section.Proyect
 			div.ProyInterna-vidDelimita
 				div.ProyInterna-video
 					iframe(width="", height="", src="https://www.youtube.com/embed/UXV_3o9OfOY", frameborder="0", allowfullscreen="")
+		div.ProyInterna-tabs
+			ul.Tabs#tabsNav
+				li.Tabs-item
+					a.Tabs-itemLink.Tabs--is-selected(data-tab="tab_one")
+						|	DESCRIPCIÓN
+				li.Tabs-item
+					a.Tabs-itemLink(data-tab="tab_two")
+						|	PLANOS Y GALERÍA
+				li.Tabs-item
+					a.Tabs-itemLink(data-tab="tab_three")
+						|	UBICACIÓN
+			div.Tabs-content#content
+				div#tab_one.Tabs-contentPane.Tabs--is-active
+					div.ProyInterna-Descripcion
+						h3.ProyInterna-tabTitle
+							|	DESCRIPCIÓN DEL PROYECTO
+						h4.ProyInterna-tabDatTitle
+							|	Bahía Solero Condominios
+						p.ProyInterna-tabDatDesc
+							|	Es un exclusivo proyecto de condominios con o sin subsidio pensados en la tranquilidad y descanso de toda la familia, ubicado a 5 minutos de Girardot, brinda un clima ideal para vivir disfrutar de un ambiente ideal. Además cuenta con caminos peatonales, amplias zonas verdes, piscina niños y adultos, parque infantil y zonas sociales
+						p.ProyInterna-tabDatDesc
+							|	Conformado por dos opciones
+						h4.ProyInterna-tabDatTitle
+							|	Bahía Solero Málaga
+						p.ProyInterna-tabDatDesc
+							|	Con un área construida desde 57.78 m2 hasta 63.93 m2 y un área privada de  45.41 m2 hasta 50.96 m2. Consta de sala – comedor, porche, 2 alcobas con disponibilidad de ampliar a 3 alcobas, 2 baños, cocina, patio y un parqueadero.
+						h4.ProyInterna-tabDatTitle
+							|	Bahía Solero Torrosa
+						p.ProyInterna-tabDatDesc
+							|	Con un área  construida desde 74.14 m2 hasta 87.81 m2, área privada: 62.19 m2 hasta 74.55 m2 conformada por sala – comedor, porche, 3 alcobas con disponibilidad de 4 alcobas, habitación principal con vestier, 3 baños, cocina, patio y parqueadero.
+				div#tab_two.Tabs-contentPane
+					div.ProyInterna-slides
+						div.ProyInterna-slidesMarco
+							div.ProyInterna-galeria
+								- for (var x = 0; x < 2; x++)
+									div.ProyInterna-galeriaItem
+										img.ProyInterna-galeriaItemImage(src="../images/proy-interna/casa.jpg")
+										p.ProyInterna-galeriaItemDesc
+											|	Vía Ricaurte – Girardot Calle 10 No 1-2 Costado Norte (Ricaurte – Cundinamarca)
+						div.ProyInterna-slidesMarco
+							div.ProyInterna-planos
+								- for (var x = 0; x < 2; x++)
+									div.ProyInterna-planosItem
+										figure.ProyInterna-planosItemImageContainer
+											img.ProyInterna-planosItemImage(src="../images/proy-interna/plano.jpg")
+										p.ProyInterna-galeriaItemDesc
+											|	Vía Ricaurte – Girardot Calle 10 No 1-2 Costado Norte (Ricaurte – Cundinamarca)
+
+				div#tab_three.Tabs-contentPane
+					figure.ProyInterna-tabUbicaContainer
+						img.ProyInterna-tabUbica(src="../images/proy-interna/mapa.jpg")
