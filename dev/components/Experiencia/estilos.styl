@@ -4,24 +4,29 @@
 	width 100%
 	background $light_gray2
 	&-title
-		margin-top 94px !important
+		margin 35px 0 !important
+		margin-bottom 10px !important
+	&-list
+		display inline-block
+		width 100%
 	&-item
 		display inline-block
 		width 100%
 		position relative
+		margin 25px 0
 	/*Imagen*/
 	&-itemImageContainer
 		display inline-block
 		margin 0
 		padding .5em
-		background $white
-		// width 627px
-		width 572px
+		background $white		
+		max-width 627px
+		width 100%		
 		box-sizing border-box
-		box-shadow 0px 6px 6px rgba(162,162,162,0.4)
-		float left
+		box-shadow 0px 6px 6px rgba(162,162,162,0.4)		
 	&-itemImage
 		max-width 546px
+		width 95%
 	/*Texto*/
 	&-info
 		display inline-block
@@ -30,10 +35,7 @@
 		padding 60px 40px 20px
 		text-align left
 		box-sizing border-box
-		box-shadow $light_gray 0 5px 35px
-		position relative
-		top 17px
-		right 50px
+		box-shadow $light_gray 0 5px 35px		
 	&-itemTitle
 		margin 0
 		font-weight 700
@@ -73,10 +75,55 @@
 		margin 1em 0
 		text-align center
 	&-clip
-		display inline-block
-		width 50px
-		height 115px
-		position absolute
-		top -56px
-		left 5px
-		z-index 2
+		display none
+
+/*Desktop*/
+@media screen and (min-width:1024px)
+	.Experiencia
+		&-title
+			margin-top 94px !important
+			margin-bottom 40px !important
+		&-list
+			width auto
+			margin 0 auto
+		&-item
+			margin 40px 0 50px
+			display table 
+			/* Contenedor con display table, centra elementos flotantes*/
+		/*Imagen*/
+		&-itemImageContainer			
+			float left
+			max-width 512px
+		&-itemImage
+			max-width 546px
+		/*Texto*/
+		&-info
+			max-width 494px
+			top 8px
+			margin-left -50px
+			position relative
+			padding 30px 40px 10px 74px
+			float left
+		&-clip
+			display inline-block
+			width 50px
+			height 115px
+			position absolute
+			top -46px
+			left 5px
+			z-index 2
+	
+/*Desktop*/
+@media screen and (min-width:1280px)
+	.Experiencia
+		/*Imagen*/
+		&-itemImageContainer
+			width 572px
+			float left
+			max-width none
+		&-itemImage
+			max-width 546px
+		/*Texto*/
+		&-info
+			max-width 627px			
+			padding 60px 40px 20px
