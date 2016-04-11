@@ -13,7 +13,7 @@ $(document).ready(function() {
 		autoPlay: false,
 		slideSpeed: 1000,
 		dots: true,
-		loop:true,
+		// loop:true,
 		responsive: {
 			0:{
 				items:1
@@ -28,7 +28,7 @@ $(document).ready(function() {
 		autoPlay: false,
 		slideSpeed: 1000,
 		dots: true,
-		loop:true,
+		// loop:true,
 		responsive: {
 			0:{
 				items:1
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		autoPlay: false,
 		slideSpeed: 1000,
 		dots: false,
-		loop:true,
+		// loop:true,
 		responsive: {
 			0:{
 				items:1
@@ -63,7 +63,7 @@ $(document).ready(function() {
 		autoPlay: false,
 		slideSpeed: 1000,
 		dots: false,
-		loop:true,
+		// loop:true,
 		responsive: {
 			0:{
 				items:1
@@ -77,7 +77,7 @@ $(document).ready(function() {
 		autoPlay: false,
 		slideSpeed: 1000,
 		dots: false,
-		loop:true,
+		// loop:true,
 		responsive: {
 			0:{
 				items:1

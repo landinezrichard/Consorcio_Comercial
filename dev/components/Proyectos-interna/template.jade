@@ -102,15 +102,17 @@ section.Proyect
 							div.ProyInterna-galeria
 								- for (var x = 0; x < 2; x++)
 									div.ProyInterna-galeriaItem
-										img.ProyInterna-galeriaItemImage(src="../images/proy-interna/casa.jpg")
+										a(href="../images/proy-interna/casa.jpg",data-lightbox="galeria")
+											img.ProyInterna-galeriaItemImage(src="../images/proy-interna/casa.jpg")
 										p.ProyInterna-galeriaItemDesc
 											|	Vía Ricaurte – Girardot Calle 10 No 1-2 Costado Norte (Ricaurte – Cundinamarca)
 						div.ProyInterna-slidesMarco
 							div.ProyInterna-planos
 								- for (var x = 0; x < 2; x++)
 									div.ProyInterna-planosItem
-										figure.ProyInterna-planosItemImageContainer
-											img.ProyInterna-planosItemImage(src="../images/proy-interna/plano.jpg")
+										a(href="../images/proy-interna/plano.jpg",data-lightbox="planos")
+											figure.ProyInterna-planosItemImageContainer
+												img.ProyInterna-planosItemImage(src="../images/proy-interna/plano.jpg")
 										p.ProyInterna-galeriaItemDesc
 											|	Vía Ricaurte – Girardot Calle 10 No 1-2 Costado Norte (Ricaurte – Cundinamarca)
 
