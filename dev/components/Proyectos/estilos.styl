@@ -9,31 +9,35 @@
 	&-item
 		display inline-block
 		max-width 567px
-		min-height 462px
+		// min-height 462px		
 		position relative
 		margin .5em
 	&-itemCuadro
-		position absolute
-		bottom 12px
-		left 0
-		right 0
+		// position absolute
+		// bottom 12px
+		// left 0
+		// right 0
 		max-width 545px
-		margin 0
-		padding 15px
+		margin -28px 0 0
+		// padding 15px
+		// margin-top -50px
 		
 	&-itemLogo
 		display inline-block
-		width 177px
-		height 174px
+		width 110px
+		height 107px
+		position absolute
+		right 0
+		top 0
 		
 	&-itemDesc
 		display inline-block
-		width 346px
-		max-width 367px
+		width 100%
 		height 174px
 		text-align left
 		padding 1.5em
 		box-sizing border-box
+		position relative
 		
 	&-itemLogo
 	&-itemDesc
@@ -70,6 +74,36 @@
 		margin 1em 0
 		text-align center
 		float right
+	&-itemTipo
+		position absolute
+		top -40px
+		left 0
+		display inline-block
+		width 200px
+		text-align center
+	&-itemTipo1
+		background $blue2
+	&-itemTipo2
+		background $lima2
+	&-itemTipoTxt
+		font-weight 700
+		font-size 1.12em
+		color $white
+		margin .5em
+		
+@media screen and (min-width:600px)
+	.Proyect
+		&-item
+			min-height 475px
+		&-itemCuadro		
+			margin -50px 15px 0
+		&-itemLogo
+			width 177px
+			height 174px
+			position static
+		&-itemDesc
+			width 346px
+			max-width 367px
 
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
